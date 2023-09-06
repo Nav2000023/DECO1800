@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Forum Page" content="width=device-width, initial-scale=1.0">
+    <title>Forum Page</title>
+    <link rel="Forumstylesheet" href="Forumsyle.css" >
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .post {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .post h2 {
+            margin: 0;
+        }
+
+        .post p {
+            margin: 10px 0;
+        }
+
+        .post-form {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .post-form textarea {
+            width: 100%;
+            height: 100px;
+        }
+
+        .post-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Forumpage</h1>
+       
+    </header>
+
+    <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Forumpage.html">Contact Me</a></li>
+    </ul>
+
+<body>
+    
+    <div class="container">
+        <h2>Recent Questions</h2>
+        <div class="post">
+            <h2>Question 1</h2>
+            <p>This is the first question.</p>
+        </div>
+        <div class="post">
+            <h2>Question 2</h2>
+            <p>This is the second question.</p>
+        </div>
+        <!-- More posts go here -->
+
+        <h2>Post a Question</h2>
+        <div class="post-form">
+            <form action="#" method="post">
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
