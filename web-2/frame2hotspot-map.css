@@ -1,0 +1,171 @@
+.frame2hotspot-map-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.frame2hotspot-map-frame2hotspot-map {
+  width: 100%;
+  height: 1345px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(18, 18, 58, 1);
+}
+.frame2hotspot-map-nav-bar {
+  top: 53px;
+  left: 206px;
+  width: 1046.725830078125px;
+  height: 105px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame2hotspot-map-text {
+  top: 1px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Lemon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame2hotspot-map-text05 {
+  left: 371px;
+  color: rgb(255, 255, 255);
+  width: 90px;
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Jaldi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame2hotspot-map-text06 {
+  left: 619.95166015625px;
+  color: rgb(255, 255, 255);
+  width: 123px;
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Jaldi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame2hotspot-map-text07 {
+  left: 901.41943359375px;
+  color: rgba(255, 255, 255, 1);
+  width: 145px;
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Jaldi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame2hotspot-map-mapcontainer {
+  top: 321px;
+  left: 188px;
+  width: 1065px;
+  height: 675px;
+  position: absolute;
+}
+.frame2hotspot-map-navlink {
+  display: contents;
+}
+.frame2hotspot-map-fluentmdl2back {
+  top: 177px;
+  left: 188px;
+  width: 49px;
+  height: 42px;
+  position: absolute;
+  text-decoration: none;
+}
+.frame2hotspot-map-text09 {
+  top: 257px;
+  left: 492px;
+  color: rgba(255, 255, 255, 1);
+  width: 457px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Lemon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame2hotspot-map-text11 {
+  top: 1057px;
+  left: 666px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Jaldi;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame2hotspot-map-bxcurrentlocation {
+  top: 1011px;
+  left: 1148px;
+  width: 63px;
+  height: 63px;
+  position: absolute;
+}
+.frame2hotspot-map-navlink1 {
+  display: contents;
+}
+.frame2hotspot-map-ellipse1button {
+  top: 1129px;
+  left: 636px;
+  width: 167px;
+  height: 158px;
+  position: absolute;
+  text-decoration: none;
+}
+.frame2hotspot-map-text13 {
+  top: 1185px;
+  left: 672px;
+  color: rgba(255, 255, 255, 1);
+  width: 105px;
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Lemon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
