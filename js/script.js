@@ -1,3 +1,43 @@
+function getYear(year) {
+	if(year) {
+		return year.match(/[\d]{4}/); // This is regex (https://en.wikipedia.org/wiki/Regular_expression)
+	}
+}
+
+function iterateRecords(data) {
+
+	console.log(data);
+
+	$.each(data.result.records, function(recordKey, recordValue) {
+
+		var recordTitle = recordValue["dc:title"];
+		var recordYear = getYear(recordValue["dcterms:temporal"]);
+		var recordImage = recordValue["150_pixel_jpg"];
+		var recordDescription = recordValue["dc:description"];
+
+		console.log(recordYear); // logs the year of the record
+
+		if (recordYear == "1915") { // if the year is 1915, then...
+
+			if(recordTitle && recordYear && recordImage && recordDescription) { 
+
+				$("#records").append(
+					$('<section class="record">').append(
+						$('<h2>').text(recordTitle),
+						$('<h3>').text(recordYear),
+						$('<img>').attr("src", recordImage),
+						$('<p>').text(recordDescription)
+					)
+				);
+
+			}
+
+		}
+
+	});
+
+}
+
 $(document).ready(function() {
 
 	var data = {
