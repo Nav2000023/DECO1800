@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzBwMOB31Zs2bun0Y9Rho1N867_bg2rAc&callback=initMap"
+    defer></script>
+
+  <title>exported project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&amp;display=swap"
+    data-tag="font" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="./style.css" />
+  <div>
+    <link href="./frame2hotspot-map.css" rel="stylesheet" />
+
+    <div class="frame2hotspot-map-container">
+      <div class="frame2hotspot-map-frame2hotspot-map">
+        <div class="frame2hotspot-map-nav-bar">
+          <a href="frame1homepage.html" class="frame2hotspot-map-text">
+            <span>
+              <span>Explore-Net</span>
+              <br />
+              <span></span>
+            </span>
+          </a>
+          <a href="frame1homepage.html" class="frame2hotspot-map-text05">
+            Home
+          </a>
+          <a href="frame10attractionpage2.html" class="frame2hotspot-map-text06">
+            Services
+          </a>
+          <span class="frame2hotspot-map-text07"><span>About Us</span></span>
+        </div>
+        <!-- <img
+            alt="Mapcontainer3421safas"
+            src="public/external/mapcontainer3421-77g-700h.png"
+            class="frame2hotspot-map-mapcontainer"
+          /> ////////////////////// -->
+
+        <div id="map" class="frame2hotspot-map-mapcontainer"></div>
+
+
+        <a href="frame1homepage.html" class="frame2hotspot-map-navlink">
+          <img alt="fluentmdl2back3444" src="public/external/fluentmdl2back3444-u4b.svg"
+            class="frame2hotspot-map-fluentmdl2back" />
+        </a>
+        <span class="frame2hotspot-map-text09">
+          <span>All hotspot locations around you</span>
+        </span>
+        <span class="frame2hotspot-map-text11">
+          <span>Get directions</span>
+        </span>
+        <img alt="bxcurrentlocation9728" src="public/external/bxcurrentlocation9728-9vn.svg"
+          class="frame2hotspot-map-bxcurrentlocation" />
+        <div class="frame2hotspot-map-navlink1">
+
+          <!-- this image is the button -->
+          <img alt="Ellipse1button9728" src="public/external/ellipse1button9728-pnb4-200h.png"
+            class="frame2hotspot-map-ellipse1button" />
+        </div>
+        <p id="nextButtonImage" class="frame2hotspot-map-text13">
+          <span>Go!</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let selectedMarker = null;
+    // Function to fetch data from the API
+    function fetchDataFromAPI(apiUrl) {
+
+      return fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => data.result.records)
+        .catch(error => {
+          console.error('Error fetching data from the API:', error);
+          return [];
+        });
+    }
+    function initMap() {
+      // Create a map centered on Brisbane
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -27.4698, lng: 153.0251 }, // Brisbane's coordinates
+        zoom: 12, // Set the initial zoom level
+      });
+
+      // Fetch data from the API
+      fetchDataFromAPI('https://www.data.brisbane.qld.gov.au/data/api/3/action/datastore_search_sql?sql=SELECT%20*%20from%20%229851b9fd-8a46-4268-9ece-4e45b143e8c9%22').then(locations => {
+        // Loop through the locations and create markers
+        locations.forEach(location => {
+          const lat = parseFloat(location["Latitude"]);
+          const lng = parseFloat(location["Longitude"]);
+
+          // Check if lat and lng are valid numbers before creating a marker
+          if (!isNaN(lat) && !isNaN(lng)) {
+            const marker = new google.maps.Marker({
+              position: { lat, lng },
+              map: map,
+              address: location["Address"],
+              title: location["Wifi Hotspot Name"], // Use the hotspot name as the marker title
+            });
+
+            // Create an info window for each marker (optional)
+            const infoWindow = new google.maps.InfoWindow({
+              content: `<strong>${location["Wifi Hotspot Name"]}</strong><br>${location["Address"]}`,
+            });
+
+            // Add a click event listener to display the info window when a marker is clicked (optional)
+            marker.addListener("click", () => {
+              infoWindow.open(map, marker);
+              selectedMarker = marker;
+            });
+          }
+
+
+        });
+      });
+
+    }
+
+    // Assuming you have an img element with id "nextButtonImage"
+    const nextButtonImage = document.getElementById("nextButtonImage");
+
+    nextButtonImage.addEventListener("click", () => {
+      if (selectedMarker) {
+        // Get all the details of the selected marker
+        const markerDetails = {
+          name: selectedMarker.getTitle(),
+          address: selectedMarker.get('address'), // You can store additional details in the marker
+          lat: selectedMarker.getPosition().lat(),
+          lng: selectedMarker.getPosition().lng(),
+        };
+
+        // Serialize the markerDetails object into a query parameter string
+        const queryParams = new URLSearchParams(markerDetails).toString();
+
+        // Navigate to the next page with the selected marker details as query parameters
+        window.location.href = `index.html?${queryParams}`;
+      } else {
+        // Handle the case where no marker is selected (optional)
+        alert("Please select a marker before proceeding.");
+
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>
